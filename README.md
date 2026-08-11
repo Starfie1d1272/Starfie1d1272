@@ -28,5 +28,5 @@ Counter-Strike 2 is a long-running personal interest, and I build software aroun
 I like ML/AI best when it is grounded in **well-defined data, explicit assumptions, and meaningful validation** — the same standard I try to apply across scientific and software work.
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Starfie1d1272&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&theme=transparent" height="150" alt="GitHub stats" />
+  <img src="./profile/stats.svg" height="150" alt="GitHub stats" />
 </p>

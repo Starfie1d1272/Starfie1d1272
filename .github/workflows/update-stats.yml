@@ -1,0 +1,36 @@
+name: Update GitHub Stats Card
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # daily at 00:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Generate stats SVG
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&theme=transparent
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update GitHub stats card"
+            git push
+          else
+            echo "No changes to stats SVG, skipping commit"
+          fi
