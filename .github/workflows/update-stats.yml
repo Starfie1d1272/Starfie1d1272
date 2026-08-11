@@ -14,12 +14,21 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Generate stats SVG
+      - name: Generate stats SVG (light)
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&theme=transparent
-          path: profile/stats.svg
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=1f2328&icon_color=0969da
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate stats SVG (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=e6edf3&icon_color=2f81f7
+          path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
@@ -27,10 +36,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/stats.svg
+          git add profile/stats-light.svg profile/stats-dark.svg
           if ! git diff --cached --quiet; then
-            git commit -m "Update GitHub stats card"
+            git commit -m "Update GitHub stats cards"
             git push
           else
-            echo "No changes to stats SVG, skipping commit"
+            echo "No changes to stats SVGs, skipping commit"
           fi
