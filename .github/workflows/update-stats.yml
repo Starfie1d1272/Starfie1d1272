@@ -12,10 +12,10 @@ jobs:
   update-stats:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Generate stats SVG (light)
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=1f2328&icon_color=0969da
@@ -24,7 +24,7 @@ jobs:
           fail_on_error: true
 
       - name: Generate stats SVG (dark)
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=e6edf3&icon_color=2f81f7
