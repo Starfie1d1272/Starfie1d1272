@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Xinyu Du&#39;s GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 60, Total Commits  (last year) : 2247, Total PRs: 527, Total Issues: 202, Contributed to (last year): 24</desc>
+        <desc id="descId">Total Stars Earned: 59, Total Commits  (last year) : 2318, Total PRs: 549, Total Issues: 212, Contributed to (last year): 24</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 47.26297324012965;
+        stroke-dashoffset: 47.56775436009365;
       }
     }
   
@@ -144,7 +144,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >60</text>
+      >59</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -159,7 +159,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >2.2k</text>
+      >2.3k</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -174,7 +174,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >527</text>
+      >549</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -189,7 +189,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >202</text>
+      >212</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
