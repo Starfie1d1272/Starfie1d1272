@@ -2,30 +2,41 @@
 
 **Planetary Science undergraduate (Chemistry track) at Nanjing University.**
 
-I care about how unfamiliar worlds work: how planetary environments form and evolve, what controls habitability, and how life — or traces of it — can originate, persist, and be detected. Over a longer horizon, that curiosity extends to **humanity's future beyond Earth** and how we may eventually interact with planetary environments.
+I study planetary chemistry and astrobiology, build open-source software around problems I encounter, and explore how AI agents can support long-term work. My research training and software projects share an interest in reproducible methods and results that can be traced back to their evidence.
 
-🔭 **Currently exploring:** Mars & terrestrial analog environments · spectroscopy + ML · AI for planetary science  
-🧪 **Research background:** astrobiology experiments on PAHs under simulated extraterrestrial conditions · trace-organic & GC–MS workflows · analytical/isotope geochemistry  
-🛠 **Also building:** reproducible, inspectable systems — scientific computing · data pipelines & provenance · versioned data contracts · testing  
-🌐 [Website](https://starfie1d.top) · [CV](https://starfie1d.top/uploads/CV_English.pdf)
+[Academic Website](https://starfie1d.top) · [Project Portfolio](https://work.starfie1d.top) · [Academic CV](https://starfie1d.top/uploads/CV_English.pdf)
 
----
+### 🎮 Software for CS2 tournaments
+
+Counter-Strike 2 is a long-running personal interest. Organizing university tournaments has given me practical problems to build for, from player registration to broadcast production and match analysis.
+
+- **[RivalHub](https://github.com/Starfie1d1272/RivalHub)** — a collegiate esports operations platform covering registration, team formation, eligibility review, scheduling, and tournament statistics.
+- **[Mizar](https://github.com/Starfie1d1272/Mizar)** — a Windows production system for campus and community CS2 broadcasts, with automated program flow, OBS integration, HUDs, and radar.
+- **[CS2 Demo Analysis Kit](https://github.com/Starfie1d1272/cs2-demo-analysis-kit)** — a local-first desktop analysis workbench and reusable TypeScript analysis packages, with statistics linked to rounds and ticks.
+
+These projects cover tournament operations, live production, and post-match analysis. Mizar connects to RivalHub for tournament data; DAK provides reusable analysis capabilities for the wider toolchain.
+
+### 🛠 Independent applications
+
+- **[SendToMyself](https://github.com/Starfie1d1272/send-to-myself)** — a self-hosted, cross-platform inbox for sending text, links, files, and tasks to yourself.
+- **[Cexing · 策星](https://github.com/Starfie1d1272/Cexing)** — a native HarmonyOS proxy client built with ArkTS and Mihomo.
+
+### 🤖 AI agents & personal context
+
+I work on agent-assisted software engineering workflows. **[dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills)** adapts Codex GitHub workflows to DeepSeek Harness, covering review feedback, CI diagnosis, and publishing with explicit approval and evidence requirements.
+
+I am also exploring **Personal Context**: how to maintain a structured, local-first context layer for long-term AI collaboration, with traceable sources, governed updates, and selective delivery to agents. This is an ongoing design exploration.
 
 ### 🧪 Science & scientific computing
 
-- **[planetary-geochemistry-coursework](https://github.com/Starfie1d1272/planetary-geochemistry-coursework)** — planetary, isotope, computational & analytical geochemistry coursework with reproducible workflows
-- **[conop9-penalty-validation](https://github.com/Starfie1d1272/conop9-penalty-validation)** — Python reproduction & cross-solution validation of CONOP9 penalty functions
+My academic interests center on planetary chemistry and astrobiology, including chemical processes in planetary environments and the preservation of potential biosignatures.
 
-### 🎮 Counter-Strike 2
+- **[CONOP9 penalty validation](https://github.com/Starfie1d1272/conop9-penalty-validation)** — independent Python reproduction and cross-solution validation of selected stratigraphic correlation penalty functions, with documented remaining differences.
+- **[Planetary & geochemical coursework](https://github.com/Starfie1d1272/planetary-geochemistry-coursework)** — selected computational and analytical coursework, including isotope calculations and geochemical models.
 
-Counter-Strike 2 is a long-running personal interest, and I build software around problems I genuinely care about in the game and its competitive ecosystem.
-
-- **[cs2-demo-analysis-kit](https://github.com/Starfie1d1272/cs2-demo-analysis-kit)** — local-first CS2 demo analysis platform and reusable TypeScript/Python analysis stack
-- **[RivalHub](https://github.com/Starfie1d1272/RivalHub)** — open-source tournament management platform built around real university esports operations
+Research experience, academic outputs, and photography are on my [academic website](https://starfie1d.top).
 
 ---
-
-I like ML/AI best when it is grounded in **well-defined data, explicit assumptions, and meaningful validation** — the same standard I try to apply across scientific and software work.
 
 <p align="left">
   <picture>
