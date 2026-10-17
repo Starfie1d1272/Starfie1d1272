@@ -25,7 +25,7 @@ These projects cover tournament operations, live production, and post-match anal
 
 I work on agent-assisted software engineering workflows. **[dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills)** adapts Codex GitHub workflows to DeepSeek Harness, covering review feedback, CI diagnosis, and publishing with explicit approval and evidence requirements.
 
-I am also exploring **Personal Context**: how to maintain a structured, local-first context layer for long-term AI collaboration, with traceable sources, governed updates, and selective delivery to agents. This is an ongoing design exploration.
+I am also exploring **[Personal Context](https://github.com/Starfie1d1272/personal-context)**: how to maintain a structured, local-first context layer for long-term AI collaboration, with traceable sources, governed updates, and selective delivery to agents. This is an ongoing design exploration.
 
 ### 🧪 Science & scientific computing
 
