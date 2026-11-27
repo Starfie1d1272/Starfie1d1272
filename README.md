@@ -132,18 +132,10 @@
   </picture>
 </p>
 
-<table>
-  <tr>
-    <td width="62%" valign="middle">
-      <b>🪐 Find me elsewhere</b><br/>
-      <a href="https://orcid.org/0009-0001-9137-4942"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID" /></a>
-      <a href="https://www.researchgate.net/profile/Xinyu-Du-34"><img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=flat-square&logo=researchgate&logoColor=white" alt="ResearchGate" /></a>
-      <a href="https://www.linkedin.com/in/xinyu-du-nju/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a><br/>
-      <sub>Nanjing, China</sub>
-    </td>
-    <td width="38%" valign="middle" align="right">
-      <img height="44" src="https://count.getloli.com/@Starfie1d1272?theme=capoo-2&padding=6" alt="Profile Views" /><br/>
-      <sub>Profile Views</sub>
-    </td>
-  </tr>
-</table>
+---
+
+<a href="https://github.com/Starfie1d1272"><img align="right" height="44" src="https://count.getloli.com/@Starfie1d1272?theme=capoo-2&padding=6" alt="Profile Views" /></a>
+
+**🪐 Find me elsewhere** · Nanjing, China
+
+[Website](https://starfie1d.top) · [Portfolio](https://work.starfie1d.top) · [ORCID](https://orcid.org/0009-0001-9137-4942) · [ResearchGate](https://www.researchgate.net/profile/Xinyu-Du-34) · [LinkedIn](https://www.linkedin.com/in/xinyu-du-nju/) · [Email](mailto:xinyu@starfie1d.top)
