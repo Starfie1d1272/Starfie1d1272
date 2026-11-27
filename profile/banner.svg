@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" role="img" aria-label="Xinyu Du — Planetary Science x Open-Source Engineering">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="52%" stop-color="#1e2959"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <radialGradient id="planetGlow" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#c7d2fe"/>
+      <stop offset="55%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#3730a3"/>
+    </radialGradient>
+    <radialGradient id="ambient" cx="82%" cy="48%" r="36%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="220" rx="12" fill="url(#bg)"/>
+  <rect width="900" height="220" rx="12" fill="url(#ambient)"/>
+
+  <!-- Subtle starfield -->
+  <g fill="#e0e7ff">
+    <circle cx="38" cy="26" r="1.4" opacity="0.65"/>
+    <circle cx="84" cy="78" r="0.9" opacity="0.35"/>
+    <circle cx="118" cy="182" r="1.1" opacity="0.5"/>
+    <circle cx="176" cy="34" r="1.5" opacity="0.4"/>
+    <circle cx="252" cy="18" r="1.0" opacity="0.6"/>
+    <circle cx="318" cy="186" r="0.9" opacity="0.35"/>
+    <circle cx="394" cy="42" r="1.4" opacity="0.55"/>
+    <circle cx="468" cy="192" r="1.0" opacity="0.35"/>
+    <circle cx="526" cy="28" r="1.1" opacity="0.6"/>
+    <circle cx="572" cy="154" r="1.5" opacity="0.35"/>
+    <circle cx="618" cy="54" r="1.0" opacity="0.6"/>
+    <circle cx="672" cy="196" r="1.0" opacity="0.35"/>
+    <circle cx="728" cy="22" r="1.4" opacity="0.65"/>
+    <circle cx="832" cy="48" r="1.0" opacity="0.4"/>
+    <circle cx="862" cy="144" r="1.1" opacity="0.55"/>
+    <circle cx="792" cy="180" r="1.5" opacity="0.35"/>
+    <circle cx="42" cy="152" r="1.0" opacity="0.5"/>
+  </g>
+
+  <!-- Subtle orbital arcs -->
+  <g fill="none" stroke="#a5b4fc" opacity="0.16" stroke-width="1">
+    <ellipse cx="755" cy="108" rx="122" ry="38" transform="rotate(-22 755 108)"/>
+    <ellipse cx="755" cy="108" rx="158" ry="52" transform="rotate(-22 755 108)" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Ringed planet -->
+  <g transform="translate(755 108) rotate(-22)">
+    <ellipse rx="84" ry="22" fill="none" stroke="#a5b4fc" stroke-width="2" opacity="0.45"/>
+    <circle r="46" fill="url(#planetGlow)"/>
+    <path d="M -84 0 Q 0 38 84 0" fill="none" stroke="#e0e7ff" stroke-width="3.2" opacity="0.88" stroke-linecap="round"/>
+    <circle cx="96" cy="-14" r="4" fill="#c7d2fe" opacity="0.85"/>
+  </g>
+
+  <!-- Typography -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="56" y="60" fill="#a5b4fc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" letter-spacing="3.5">STARFIE1D</text>
+    <text x="54" y="116" fill="#ffffff" font-size="46" font-weight="700" letter-spacing="-0.5">Xinyu Du</text>
+    <text x="56" y="150" fill="#e0e7ff" font-size="18" font-weight="400">Planetary Science × Open-Source Engineering</text>
+    <text x="56" y="178" fill="#a5b4fc" font-size="14" font-weight="400">Nanjing University · Building reproducible software &amp; CS2 esports infrastructure</text>
+  </g>
+
+  <!-- Soft horizon wave -->
+  <path d="M0 202 Q225 174 450 202 T900 190 V220 H0 Z" fill="#ffffff" opacity="0.06"/>
+</svg>

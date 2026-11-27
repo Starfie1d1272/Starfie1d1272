@@ -1,4 +1,4 @@
-name: Update GitHub Stats Card
+name: Update GitHub Profile Assets
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  update-stats:
+  update-assets:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
@@ -18,7 +18,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=1f2328&icon_color=0969da
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&disable_animations=true&border_radius=8&bg_color=ffffff&border_color=d1d9e0&title_color=4f46e5&text_color=1f2328&icon_color=4f46e5&custom_title=GitHub%20Stats
           path: profile/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -27,19 +27,47 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_title=true&hide_border=true&hide_rank=true&bg_color=00000000&text_color=e6edf3&icon_color=2f81f7
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&disable_animations=true&border_radius=8&bg_color=0d1117&border_color=30363d&title_color=818cf8&text_color=e6edf3&icon_color=818cf8&custom_title=GitHub%20Stats
           path: profile/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
+
+      - name: Generate top languages SVG (light)
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&disable_animations=true&border_radius=8&bg_color=ffffff&border_color=d1d9e0&title_color=4f46e5&text_color=1f2328&custom_title=Top%20Languages
+          path: profile/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages SVG (dark)
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&disable_animations=true&border_radius=8&bg_color=0d1117&border_color=30363d&title_color=818cf8&text_color=e6edf3&custom_title=Top%20Languages
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate contribution snake SVGs (light & dark)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-light.svg?palette=github-light&color_snake=4f46e5
+            profile/snake-dark.svg?palette=github-dark&color_snake=818cf8
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/stats-light.svg profile/stats-dark.svg
+          git add profile/stats-light.svg profile/stats-dark.svg profile/top-langs-light.svg profile/top-langs-dark.svg profile/snake-light.svg profile/snake-dark.svg
           if ! git diff --cached --quiet; then
-            git commit -m "Update GitHub stats cards"
+            git commit -m "Update GitHub profile stats, languages, and contribution snake"
             git push
           else
-            echo "No changes to stats SVGs, skipping commit"
+            echo "No changes to profile SVGs, skipping commit"
           fi
